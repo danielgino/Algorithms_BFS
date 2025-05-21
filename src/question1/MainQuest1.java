@@ -72,6 +72,7 @@ public class MainQuest1 {
         } else {
             System.out.println("The best slot: (" +"X: "+ bestX + ", Y: "  + bestY + ")");
             System.out.println("Total sum of Steps:  " + minSum);
+            System.out.println("Total Cost:  O(k × n²)");
         }
 
 
