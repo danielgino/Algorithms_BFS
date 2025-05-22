@@ -4,6 +4,13 @@ import java.util.*;
 
 public class MainQuest1 {
     public static void main(String[] args) {
+        System.out.println("====Welcome to Robot🤖 BFS!====\n" +
+       "in this program we will find the most shortest route to slot\n"+
+        "that all N robots(Marked as R) can reach ! \n" +
+       "Robot can move only on white slots(Marked as W) \n"+
+                "But beware of black Box(Marked as B)  ");
+        System.out.println("============🤖============");
+        System.out.println();
         Scanner scanner=new Scanner(System.in);
         System.out.println("Please Choose N Board size (N X N)");
         int userSize= scanner.nextInt();
