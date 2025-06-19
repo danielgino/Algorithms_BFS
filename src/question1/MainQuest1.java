@@ -19,7 +19,7 @@ public class MainQuest1 {
         System.out.println("Please Choose Number Of Black Box:");
         int numberOfBlackBoxes= scanner.nextInt();
         List<int[]> blackBox = generateRandomPositions(numberOfBlackBoxes, userSize, userSize, new HashSet<>());
-        List<int[]> robots = generateRandomPositions(numberOfRobots, userSize, userSize, toSet(blackBox));
+         List<int[]> robots = generateRandomPositions(numberOfRobots, userSize, userSize, toSet(blackBox));
         ////בדיקת התרגיל מתוך השיעורי בית
  //        List<int[]> blackBox=new ArrayList<>();
 //        blackBox.add(new int[]{1,0});
@@ -114,6 +114,7 @@ public class MainQuest1 {
         int startY=robot[1];
         Queue<int[]> queue = new LinkedList<>();
         queue.add(new int[]{startX,startY});
+        distance[startX][startY] = 0;
         while (!queue.isEmpty()){
             int[] u= queue.poll();
             int x=u[0];
