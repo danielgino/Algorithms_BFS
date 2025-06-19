@@ -181,7 +181,7 @@ Reversed: Node: 2 Connected to: [1]
 Reversed: Node: 3 Connected to: []
 Reversed: Node: 4 Connected to: [3]
 Reversed: Node: 5 Connected to: [4]
-<b> The Graph ❗Not❗ Well Tied!❌ </b>
+The Graph ❗Not❗ Well Tied!❌ 
 ```
 
 
