@@ -1,4 +1,4 @@
-📌 Description
+# 📌 Description
 # Question 1
 This Java program finds the best slot (white cell) on an N x N board that can be reached by all given robots, such that the total number of steps taken by all robots is minimized.
 
@@ -73,14 +73,14 @@ Total sum of Steps:  10
 Total Cost:  O(k × n²)
 ```
 
-### Question 2
+# Question 2
 
-🌳 Tree Diameter – Question 2
+### 🌳 Tree Diameter – Question 2
 Given an undirected tree T = (V, E) with n nodes, compute the diameter of the tree in linear time O(n).
 
 The diameter of a tree is defined as the length of the longest shortest path between any two nodes.
 
-💡 Algorithm Overview
+### 💡 Algorithm Overview
 This program uses two BFS traversals to find the tree's diameter efficiently.
 
 Steps:
@@ -97,7 +97,7 @@ Each BFS traversal takes O(n) time.
 
 Therefore, the overall time is O(n).
 
-▶️ How to Run
+### ▶️ How to Run
 Open the project in IntelliJ (or any Java IDE).
 
 Run the MainQuest2 class.
@@ -120,4 +120,70 @@ The Deepest Node:5
 Final Answer: The Diameter of tree is: 4
 Total cost of O(N)
 ```
+
+# Question 3
+
+### 💡 Algorithm Description
+The algorithm follows this logic:
+
+Choose an arbitrary starting vertex x.
+
+Run BFS from x on the original graph G to check which nodes are reachable.
+
+Reverse the graph G, meaning that for every edge u → v in G, we add the edge v → u in G'.
+
+Run BFS from the same node x on the reversed graph G'.
+
+If all nodes were reachable in both traversals, the graph is strongly connected.
+
+Otherwise, it is not strongly connected.
+
+This approach is based on the fundamental property of strong connectivity:
+If a graph is strongly connected, then any node must be able to reach all others, and also be reachable from all others.
+
+### 🧠 Time and Space Complexity
+Reversing the graph: O(E)
+
+Each BFS: O(V + E)
+
+Overall time complexity: O(V + E)
+
+### ▶️ How to Run the Program
+Open the project in IntelliJ IDEA or any Java IDE.
+
+Run the class: MainQuest3.
+
+The graph is defined statically as an adjacency list in the code.
+
+The program will print the structure of the graph and reversed graph, then output whether it is strongly connected.
+
+## Graph Input
+```
+graph.get(0).add(1);
+graph.get(1).add(2);
+graph.get(3).add(1);
+graph.get(3).add(4);
+graph.get(4).add(5);
+```
+## Output: 
+```
+Printing Graph: 
+Node: 0 Connected to: [1]
+Node: 1 Connected to: [2]
+Node: 2 Connected to: []
+Node: 3 Connected to: [1, 4]
+Node: 4 Connected to: [5]
+Node: 5 Connected to: []
+==== Printing Reversed Graph: ==== 
+Reversed: Node: 0 Connected to: []
+Reversed: Node: 1 Connected to: [0, 3]
+Reversed: Node: 2 Connected to: [1]
+Reversed: Node: 3 Connected to: []
+Reversed: Node: 4 Connected to: [3]
+Reversed: Node: 5 Connected to: [4]
+<b> The Graph ❗Not❗ Well Tied!❌ </b>
+```
+
+
+
 
