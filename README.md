@@ -75,7 +75,49 @@ Total Cost:  O(k × n²)
 
 ### Question 2
 
+🌳 Tree Diameter – Question 2
+Given an undirected tree T = (V, E) with n nodes, compute the diameter of the tree in linear time O(n).
+
+The diameter of a tree is defined as the length of the longest shortest path between any two nodes.
+
+💡 Algorithm Overview
+This program uses two BFS traversals to find the tree's diameter efficiently.
+
+Steps:
+Perform BFS from any arbitrary node (e.g., node 0).
+
+Find the farthest node x from the starting point.
+
+Perform another BFS starting from node x.
+
+The maximum distance found in this second BFS is the tree's diameter.
+
+Time Complexity:
+Each BFS traversal takes O(n) time.
+
+Therefore, the overall time is O(n).
+
+▶️ How to Run
+Open the project in IntelliJ (or any Java IDE).
+
+Run the MainQuest2 class.
+
+The tree is hardcoded as an adjacency list.
+
+## Input Graph
+<img src="https://github.com/user-attachments/assets/4ab31fac-f235-47a6-922a-124bd7fa3690" width="300"/>
 
 
-
+## Output
 ```
+Node: 0 Connected to: [1]
+Node: 1 Connected to: [0, 2, 3]
+Node: 2 Connected to: [1]
+Node: 3 Connected to: [1, 4]
+Node: 4 Connected to: [3, 5]
+Node: 5 Connected to: [4]
+The Deepest Node:5
+Final Answer: The Diameter of tree is: 4
+Total cost of O(N)
+```
+
