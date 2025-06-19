@@ -1,5 +1,5 @@
 📌 Description
-### Question 1
+# Question 1
 This Java program finds the best slot (white cell) on an N x N board that can be reached by all given robots, such that the total number of steps taken by all robots is minimized.
 
 Robots (R) can only move on white slots (W) and must avoid black boxes (B). The algorithm uses Breadth-First Search (BFS) for each robot to compute the shortest distances to all accessible white cells.
@@ -71,4 +71,11 @@ Number Of Black slots:14
 The best slot: (X: 2, Y: 2)
 Total sum of Steps:  10
 Total Cost:  O(k × n²)
+```
+
+### Question 2
+
+
+
+
 ```
