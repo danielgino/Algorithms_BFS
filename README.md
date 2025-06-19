@@ -1,10 +1,10 @@
-# 📌 Description
+#  Description
 # Question 1
 This Java program finds the best slot (white cell) on an N x N board that can be reached by all given robots, such that the total number of steps taken by all robots is minimized.
 
 Robots (R) can only move on white slots (W) and must avoid black boxes (B). The algorithm uses Breadth-First Search (BFS) for each robot to compute the shortest distances to all accessible white cells.
 
-▶️ How to Run
+ How to Run
 Open the project in IntelliJ IDEA or any Java IDE.
 
 Make sure the main class is set to:
@@ -12,7 +12,7 @@ question1.MainQuest1
 
 Run the program (e.g., click "Run" or execute via terminal if compiled manually).
 
-📥 Input (via console)
+ Input (via console)
 The program will prompt you to enter:
 
 Board size (N) – the board will be N x N
@@ -23,7 +23,7 @@ Number of Black Boxes – number of blocked cells (B) that robots cannot pass th
 
 Note: Positions are chosen randomly at runtime.
 
-📤 Output
+ Output
 The generated board will be printed, using:
 
 R = Robot
@@ -75,12 +75,12 @@ Total Cost:  O(k × n²)
 
 # Question 2
 
-### 🌳 Tree Diameter – Question 2
+###  Tree Diameter – Question 2
 Given an undirected tree T = (V, E) with n nodes, compute the diameter of the tree in linear time O(n).
 
 The diameter of a tree is defined as the length of the longest shortest path between any two nodes.
 
-### 💡 Algorithm Overview
+###  Algorithm Overview
 This program uses two BFS traversals to find the tree's diameter efficiently.
 
 Steps:
@@ -97,7 +97,7 @@ Each BFS traversal takes O(n) time.
 
 Therefore, the overall time is O(n).
 
-### ▶️ How to Run
+###  How to Run
 Open the project in IntelliJ (or any Java IDE).
 
 Run the MainQuest2 class.
@@ -141,14 +141,14 @@ Otherwise, it is not strongly connected.
 This approach is based on the fundamental property of strong connectivity:
 If a graph is strongly connected, then any node must be able to reach all others, and also be reachable from all others.
 
-### 🧠 Time and Space Complexity
+###  Time and Space Complexity
 Reversing the graph: O(E)
 
 Each BFS: O(V + E)
 
 Overall time complexity: O(V + E)
 
-### ▶️ How to Run the Program
+###  How to Run the Program
 Open the project in IntelliJ IDEA or any Java IDE.
 
 Run the class: MainQuest3.
